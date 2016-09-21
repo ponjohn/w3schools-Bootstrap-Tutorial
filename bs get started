@@ -1,0 +1,82 @@
+Why Use Bootstrap?
+Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework
+Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Safari, and Opera)
+
+Where to Get Bootstrap?
+Download Bootstrap from getbootstrap.com
+Include Bootstrap from a CDN (Content Delivery Network).
+
+MaxCDN provides CDN support for Bootstrap's CSS and JavaScript.
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+Create First Web Page w/ Bootstrap
+1. Add the HTML doctype
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+  </head>
+</html>
+2. Bootstrap 3 is mobile-first
+<meta name="viewport" content="width=device-width, initial-scale=1"> // proper rendering & touch zooming
+The width=device-width part sets the width of the page to follow the screen-width of the device 
+(which will vary depending on the device).
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+3. Containers
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+Note: Containers are not nestable (you cannot put a container inside another container).
+
+<!DOCTYPE html>  //my 1st bootstrap pg
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head><body>
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+</div></body></html>
+
+Two Basic Bootstrap Pages
+<!DOCTYPE html> //Example shows a basic Bootstrap page (with a responsive fixed width container):
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head><body><div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p> 
+</div></body></html>
+
+<!DOCTYPE html>  //Example shows a basic Bootstrap page (with a full width container):
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head><body><div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p> 
+</div></body></html>
